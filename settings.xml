@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+ 
+  <!-- 我本地的仓库地址 -->
+  <localRepository>D:\mavenRepository\repository</localRepository>
+ 
+  <pluginGroups></pluginGroups>
+  <proxies></proxies>
+  <servers></servers>
+ 
+  <mirrors>
+	<!-- 阿里云中央仓库镜像地址 -->
+	<!-- 阿里云仓库 -->
+    <mirror>
+        <id>alimaven</id>
+        <mirrorOf>central</mirrorOf>
+        <name>aliyun maven</name>
+        <url>http://maven.aliyun.com/nexus/content/repositories/central/</url>
+    </mirror>
+	
+	<mirror>
+     <id>aliyunmaven1</id>
+     <mirrorOf>*</mirrorOf>
+     <name>阿里云公共仓库</name>
+     <url>https://maven.aliyun.com/repository/public</url>
+    </mirror>
+    
+     <mirror>
+     <id>aliyunmaven2</id>
+     <mirrorOf>*</mirrorOf>
+     <name>阿里云谷歌仓库</name>
+     <url>https://maven.aliyun.com/repository/google</url>
+    </mirror>
+    
+    <mirror>
+     <id>aliyunmaven3</id>
+     <mirrorOf>*</mirrorOf>
+     <name>阿里云阿帕奇仓库</name>
+     <url>https://maven.aliyun.com/repository/apache-snapshots</url>
+    </mirror>
+    
+    <mirror>
+     <id>aliyunmaven4</id>
+     <mirrorOf>*</mirrorOf>
+     <name>阿里云spring仓库</name>
+     <url>https://maven.aliyun.com/repository/spring</url>
+    </mirror>
+    
+    <mirror>
+     <id>aliyunmaven5</id>
+     <mirrorOf>*</mirrorOf>
+     <name>阿里云spring插件仓库</name>
+     <url>https://maven.aliyun.com/repository/spring-plugin</url>
+    </mirror>
+	
+	<!-- 腾讯云中央仓库 -->
+    <mirror>
+      <id>tencent</id>
+      <name>tencent maven mirror</name>
+      <url>https://mirrors.tencent.com/nexus/repository/maven-public/</url>
+      <mirrorOf>*</mirrorOf>
+    </mirror>
+
+  </mirrors>
+  <profiles></profiles>
+</settings>
